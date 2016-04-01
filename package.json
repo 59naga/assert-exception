@@ -37,8 +37,8 @@
   "keywords": [
     "assert",
     "exception",
-    "thrown",
-    "rejected"
+    "throws",
+    "rejects"
   ],
   "repository": {
     "type": "git",
