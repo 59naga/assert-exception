@@ -92,7 +92,7 @@ assert(throws(
 
 # `rejects(promise)` -> `Promise(reason)`
 
-it reverses the `fulfill` and `rejected`.
+return the `rejected` reason unless `fulfill`.
 
 ```js
 import 'babel-polyfill';
