@@ -90,7 +90,7 @@ assert(throws(
 ).message === undefined); // fail
 ```
 
-# `rejected(promise)` -> `Promise(reason)``
+# `rejected(promise)` -> `Promise(reason)`
 
 it reverses the `fulfill` and `rejected`.
 
