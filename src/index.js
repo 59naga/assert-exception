@@ -13,9 +13,9 @@ export function throws(exception) {
 }
 
 /**
-* @param {promise} promise - a expected rejection
+* @param {promise} promise - a expected reject
 * @returns {promise<reason>} reason - the rejected reason (rejects the fulfill)
 */
-export function rejected(promise) {
+export function rejects(promise) {
   return new Promise((resolve, reject) => promise.then(reject, resolve));
 }

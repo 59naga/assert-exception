@@ -90,18 +90,18 @@ assert(throws(
 ).message === undefined); // fail
 ```
 
-# `rejected(promise)` -> `Promise(reason)`
+# `rejects(promise)` -> `Promise(reason)`
 
-it reverses the `fulfill` and `rejected`.
+it reverses the `fulfill` and `rejects`.
 
 ```js
 import 'babel-polyfill';
 import assert from 'power-assert';
-import { rejected } from 'assert-exception';
+import { rejects } from 'assert-exception';
 
-it('rejected', async () => {
-  assert((await rejected(Promise.reject(new Error('foo')))).message === 'foo'); // pass
-  assert((await rejected(Promise.resolve(new Error('foo')))).message === 'foo'); // fail
+it('rejects', async () => {
+  assert((await rejects(Promise.reject(new Error('foo')))).message === 'foo'); // pass
+  assert((await rejects(Promise.resolve(new Error('foo')))).message === 'foo'); // fail
 });
 ```
 
