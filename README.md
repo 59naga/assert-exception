@@ -63,7 +63,7 @@ assert(throws(
 //
 // AssertionError:   # foo.js:4
 //
-//   assert(throws(() => {}).message === 'fail')
+//   assert(throws(() => {}).message === 'foo')
 //          |                |       |
 //          |                |       false
 //          Object{}         undefined
