@@ -22,7 +22,7 @@ Assert Exception
 Installation
 ---
 ```bash
-npm install assert-exception --save
+npm install assert-exception --save-dev
 ```
 
 Usage
