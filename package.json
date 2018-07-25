@@ -1,0 +1,45 @@
+{
+  "name": "assert-exception",
+  "version": "1.1.0",
+  "files": [
+    "index.js",
+    "index.js.map",
+    "index.mjs",
+    "yarn.lock"
+  ],
+  "scripts": {
+    "start": "abby format, test --watch \"*.mjs\"",
+    "format": "prettier *.mjs --write",
+    "test": "node --experimental-modules test.mjs",
+    "build": "babel index.mjs --out-file index.js --source-maps --plugins=@babel/transform-modules-commonjs",
+    "postversion": "git push --follow-tags && conventional-github-releaser -p atom -r 0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.54",
+    "abigail": "^1.9.5",
+    "eastern": "^0.0.4",
+    "prettier": "^1.13.7"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120
+  },
+  "keywords": [
+    "assert",
+    "exception",
+    "throws",
+    "rejects"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/59naga/assert-exception.git"
+  },
+  "bugs": {
+    "url": "https://github.com/59naga/assert-exception/issues"
+  },
+  "homepage": "https://github.com/59naga/assert-exception#readme",
+  "author": "59naga <i59naga@icloud.com>",
+  "license": "MIT"
+}
