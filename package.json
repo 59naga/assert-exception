@@ -1,6 +1,6 @@
 {
   "name": "assert-exception",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "files": [
     "index.js",
     "index.js.map",
